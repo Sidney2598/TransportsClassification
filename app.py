@@ -4,8 +4,6 @@ import pathlib
 import plotly.express as px
 import platform
 from fastai.learner import load_learner
-from os.path import abspath
-path = abspath("path/to/file")
 plt=platform.system()
 if plt=='Linux':pathlib.WindowsPath=pathlib.PosixPath
 
