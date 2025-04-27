@@ -4,8 +4,8 @@ import pathlib
 import plotly.express as px
 import platform
 from fastai.learner import load_learner
-plt=platform.system()
-if plt=='Linux':pathlib.PosixPath=pathlib.WindowsPath
+temp=pathlib.PosixPath
+pathlib.PosixPath=pathlib.WindowsPath
 
 st.title('Nihoyat ishladi')
 file=st.file_uploader('Rasm yuklash',type=['png','jpeg','gif','svg'])
